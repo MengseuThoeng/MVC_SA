@@ -1,10 +1,10 @@
 package org.st10.sa.dto;
 
-public record CustomerCreateRequest(
-        String telephone,
+public record CustomerEditRequest(
 
         String name,
 
         Double score
+
 ) {
 }

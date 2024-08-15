@@ -19,6 +19,7 @@ public class Customer {
     @Column(unique = true, nullable = false)
     private String telephone;
 
+    @Column(nullable = false)
     private String name;
 
     private Double score;

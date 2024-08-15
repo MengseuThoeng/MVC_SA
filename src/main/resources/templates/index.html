@@ -2,9 +2,57 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Management Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .card {
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+        }
+        .card img {
+            filter: brightness(85%);
+            transition: filter 0.3s;
+        }
+        .card:hover img {
+            filter: brightness(100%);
+        }
+    </style>
 </head>
-<body>
+<body class="bg-gradient-to-r from-blue-50 to-blue-100 min-h-screen flex items-center justify-center">
+<div class="container mx-auto px-4">
+    <h1 class="text-4xl font-extrabold mb-12 text-center text-blue-700">Management Dashboard</h1>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+        <!-- Customer Card -->
+        <a href="/customers" class="card bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105">
+            <img src="https://images.ctfassets.net/p15sglj92v6o/nmIkoqbgT8AyPn3MDImnG/8ba7af11f1bc9bc2bbe13be4d41489b7/customer-support-hero.png" alt="Customer Management" class="w-full h-52 object-cover">
+            <div class="p-6">
+                <h2 class="text-2xl font-semibold text-center text-blue-800">Customer Management</h2>
+            </div>
+        </a>
 
+        <!-- Product Card -->
+        <a href="/products" class="card bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105">
+            <img src="https://www.mountaingoatsoftware.com/uploads/blog/2016-09-06-what-is-a-product.png" alt="Product Management" class="w-full h-52 object-cover">
+            <div class="p-6">
+                <h2 class="text-2xl font-semibold text-center text-blue-800">Product Management</h2>
+            </div>
+        </a>
+
+        <!-- Category Card -->
+        <a href="/categories" class="card bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105">
+            <img src="https://www.gep.com/prod/s3fs-public/blog-images/how-a-solid-foundation-is-critical-to-category-management-success.jpg" alt="Category Management" class="w-full h-52 object-cover">
+            <div class="p-6">
+                <h2 class="text-2xl font-semibold text-center text-blue-800">Category Management</h2>
+            </div>
+        </a>
+    </div>
+</div>
 </body>
 </html>
