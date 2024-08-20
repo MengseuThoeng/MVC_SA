@@ -10,6 +10,8 @@ public record ProductResponse(
 
             Integer qty,
 
+            String image,
+
             String categoryName
 ) {
 }

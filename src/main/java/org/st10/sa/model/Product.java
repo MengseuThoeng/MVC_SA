@@ -23,6 +23,8 @@ public class Product {
 
     private Integer qty;
 
+    private String image;
+
     @ManyToOne
     private Category category;
 
